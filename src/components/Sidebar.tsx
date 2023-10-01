@@ -43,7 +43,7 @@ const Sidebar = () => {
         theme="light"
         mode="inline"
         defaultSelectedKeys={["1"]}
-        style={{ border: "none" }}
+        style={{ border: "none", flex: '0 auto'}}
         items={[
           {
             key: "1",
