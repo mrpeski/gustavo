@@ -15,8 +15,11 @@ import { ReactComponent as TagIcon } from "./cp-icons-tag-artboard-211.svg";
 import { ReactComponent as MailIcon } from "./communication-mail.svg";
 import { ReactComponent as SettingsIcon } from "./interface-settings.svg";
 import { ReactComponent as PlayIcon } from "./media-play-circle.svg";
+import { ReactComponent as AppLogo } from "./logo.svg";
+import { ReactComponent as ExpandIcon } from "./expand-more.svg";
 
 export {
+  AppLogo,
   Home,
   ChevronRight,
   Calendar,
@@ -34,4 +37,5 @@ export {
   MailIcon,
   SettingsIcon,
   PlayIcon,
+  ExpandIcon
 };
