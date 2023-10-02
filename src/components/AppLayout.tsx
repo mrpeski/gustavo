@@ -19,7 +19,7 @@ const AppLayout: FC<PropsWithChildren<{ header: FC }>> = ({
         <Header
           style={{
             padding: 32,
-            marginBottom: 32,
+            marginBottom: 16,
             background: colorBgContainer,
           }}
         >
