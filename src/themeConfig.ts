@@ -7,7 +7,8 @@ export const themeConfig: ThemeConfig = {
     colorBgContainer: "#F9FAFF",
     borderRadius: 8,
     lineWidth: 0.5,
-    colorBorder: '#ECECEC'
+    colorBorder: '#ECECEC',
+    colorText: '#0B0B0B'
   },
   components: {
     Menu: {
@@ -45,6 +46,13 @@ export const themeConfig: ThemeConfig = {
             borderRadius: 8,
             colorBgContainer: '#FFF'
 
+    },
+    Collapse: {
+      headerBg: '#FFF',
+      lineWidth: 1,
+      headerPadding: "18px 16px",
+         
+      colorBorder: 'transparent',
     }
   },
 };

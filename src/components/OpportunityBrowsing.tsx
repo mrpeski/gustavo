@@ -3,13 +3,6 @@ import type { MenuProps } from "antd";
 import { Badge, Button, Dropdown, message, Space, Tooltip } from "antd";
 import { ExpandIcon } from "./icons";
 
-const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-  message.info("Click on left button.");
-  console.log("click left button", e);
-};
-
-
-
 const ListRenderer: FC<{label: string, count: number}> = ({label, count}) =>{
   return <span style={{display: "flex",
     justifyContent: "space-between",

@@ -1,78 +1,80 @@
-import { SettingOutlined } from "@ant-design/icons";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import type { CollapseProps } from "antd";
-import { Collapse, Select } from "antd";
+import { Collapse, theme } from "antd";
+import { DocumentIcon, ExpandIcon } from "./icons";
 
-const { Option } = Select;
-
+const FilterLabel: FC<{label: string}> = ({label}) => {
+  return <div style={{display: "flex", alignItems: "center", gap:8 }}>
+  <DocumentIcon width={16} height={16}/> <span>{label}</span>
+  </div> 
+}
 const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
   it can be found as a welcome guest in many households across the world.
 `;
 
-type ExpandIconPosition = "start" | "end";
 
 const Filters: React.FC = () => {
-  const [expandIconPosition, setExpandIconPosition] =
-    useState<ExpandIconPosition>("start");
-
-  const onPositionChange = (newExpandIconPosition: ExpandIconPosition) => {
-    setExpandIconPosition(newExpandIconPosition);
-  };
 
   const onChange = (key: string | string[]) => {
     console.log(key);
   };
 
-  const genExtra = () => (
-    <SettingOutlined
-      onClick={(event) => {
-        // If you don't want click extra trigger collapse, you can prevent this:
-        event.stopPropagation();
-      }}
-    />
-  );
+  const { token } = theme.useToken();
 
   const items: CollapseProps["items"] = [
     {
       key: "1",
-      label: "This is panel header 1",
+      label: <FilterLabel label={"Personal Information"} />,
       children: <div>{text}</div>,
-      extra: genExtra(),
+      style: {paddingTop: 8}
     },
     {
       key: "2",
-      label: "This is panel header 2",
+      label: <FilterLabel label={"Education"}/>,
       children: <div>{text}</div>,
-      extra: genExtra(),
+      style: {borderTop: '1px solid #F2F2F2'}
     },
     {
       key: "3",
-      label: "This is panel header 3",
+      label: <FilterLabel label={"Work Experience"}/>,
       children: <div>{text}</div>,
-      extra: genExtra(),
+      style: {borderTop: '1px solid #F2F2F2'}
+    },
+  {
+      key: "4",
+      label: <FilterLabel label={"Activity Filter"}/>,
+      children: <div>{text}</div>,
+      style: {borderTop: '1px solid #F2F2F2'}
+    },{
+      key: "5",
+      label: <FilterLabel label={"Advanced Filter"}/>,
+      children: <div>{text}</div>,
+      style: {borderTop: '1px solid #F2F2F2'}
+
     },
   ];
 
   return (
     <>
+    <header style={{display:'flex', justifyContent:'space-between', 
+    padding: "18px 16px", backgroundColor: '#FFF', 
+    borderRadius: "8px 8px 0 0",
+    position: 'relative',marginBottom: -8, borderBottom: '1px solid #F2F2F2'
+    }}>
+     <span
+     style={{fontWeight: "500"}}
+     >Filters</span>
+      <span style={{fontWeight: "300"}}>{0} Selected</span>
+    </header>
+
       <Collapse
-        defaultActiveKey={["1"]}
         onChange={onChange}
-        expandIconPosition={expandIconPosition}
+        expandIconPosition={"end"}
+        expandIcon={({ isActive }) => <ExpandIcon fill={token.colorPrimary} rotate={isActive ? 90 : 0} />}
         items={items}
       />
-      <br />
-      <span>Expand Icon Position: </span>
-      <Select
-        value={expandIconPosition}
-        style={{ margin: "0 8px" }}
-        onChange={onPositionChange}
-      >
-        <Option value="start">start</Option>
-        <Option value="end">end</Option>
-      </Select>
     </>
   );
 };

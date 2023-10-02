@@ -19,7 +19,7 @@ const { Title, Paragraph } = Typography;
 
 const { Header, Content } = Layout;
 
-const AppLayout: FC<PropsWithChildren> = ({ children }) => {
+const AppLayout: FC<PropsWithChildren<{header: FC}>> = ({ children, header }) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -35,55 +35,7 @@ const AppLayout: FC<PropsWithChildren> = ({ children }) => {
             background: colorBgContainer,
           }}
         >
-          <Row gutter={{ xs: 8, sm: 16, md: 24 }}>
-            <Col flex="385px" style={{ marginRight: 32 }}>
-              <Title level={4} style={{ margin: 0 }}>
-                London Internship Program
-              </Title>
-              <Paragraph>London</Paragraph>
-            </Col>
-            <Col flex="auto">
-              <Row justify={"space-between"}>
-                <OpportunityBrowsing />
-                <div style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  gap: 8
-                }}>
-                  <Button
-                    size="large"
-                    type="default"
-                    icon={<TagIcon />}
-                    href="https://www.google.com"
-                  />
-                  <Button
-                    size="large"
-                    style={{alignSelf: "center"}}
-                    icon={<UserCloseIcon />}
-                    href="https://www.google.com"
-                  />
-                  <Button
-                    size="large"
-                    icon={<UserCheckIcon />}
-                    href="https://www.google.com"
-                  />
-                  <Button
-                    size="large"
-                    icon={<UserVoiceIcon />}
-                    href="https://www.google.com"
-                  />
-                  <Button
-                    size="large"
-                    icon={<MailIcon />}
-                    href="https://www.google.com"
-                  />
-                  <Divider type="vertical" />
-                  <CandidateAction />
-                </div>
-              </Row>
-            </Col>
-          </Row>
+          {React.createElement(header)}
         </Header>
         <Content
           style={{

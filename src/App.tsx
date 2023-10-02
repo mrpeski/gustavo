@@ -1,35 +1,19 @@
 import React from "react";
+import { Row, Col, Affix } from "antd";
 import "./App.css";
-import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import AppLayout from "./components/AppLayout";
-import { Affix, Button, Checkbox, Col, Form, Input, Row } from "antd";
 import Filters from "./components/Filters";
 import CandidateList from "./components/CandidateList";
+import Search from "./components/Search";
+import PageHeader from "./components/PageHeader";
 
 function App() {
   return (
-    <AppLayout>
+    <AppLayout header={PageHeader}>
       <Row>
         <Col flex="385px" style={{ marginRight: 32 }}>
           <Affix offsetTop={32} onChange={(affixed) => console.log(affixed)}>
-            <Form
-              name="normal_login"
-              className="login-form"
-              initialValues={{ remember: true }}
-              onFinish={() => null}
-            >
-              <Form.Item
-                name="username"
-                rules={[
-                  { required: true, message: "Please input your Username!" },
-                ]}
-              >
-                <Input
-                  prefix={<UserOutlined className="site-form-item-icon" />}
-                  placeholder="Username"
-                />
-              </Form.Item>
-            </Form>
+            <Search /> 
             <Filters />
           </Affix>
         </Col>
