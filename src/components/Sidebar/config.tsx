@@ -6,6 +6,7 @@ import {
   NotebookIcon,
   HeartIcon,
   Calendar,
+  UserGroupIcon,
 } from "../icons";
 
 const withAntClass = (Component: any, props?: any) => {
@@ -26,6 +27,11 @@ export const navConfg = [
     key: "1",
     icon: withAntClass(Home),
     label: "nav 1",
+  },
+  {
+    key: "2",
+    icon: withAntClass(UserGroupIcon),
+    label: "nav 2",
   },
   {
     key: "3",

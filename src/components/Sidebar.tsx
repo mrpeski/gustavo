@@ -1,26 +1,11 @@
-import React, { createElement, useState } from "react";
+import React, { useState } from "react";
 import { Menu, Button, theme } from "antd";
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
 import Sider from "antd/es/layout/Sider";
 import {
-  Home,
   ChevronRight,
-  Calendar,
-  AndroidShare,
-  DocumentIcon,
-  NotebookIcon,
-  HeartIcon,
-  UserGroupIcon,
   AppLogo,
   SettingsIcon,
 } from "./icons";
-import { v4 } from "uuid";
 import { navConfg } from "./Sidebar/config";
 
 const collapsedStyle = {
@@ -105,7 +90,7 @@ const Sidebar = () => {
           alignItems: "center",
           display: "flex",
           flexDirection: "column",
-          gap: 48,
+          gap: 24,
         }}
       >
         <SettingsIcon />
