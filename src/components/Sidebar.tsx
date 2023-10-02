@@ -50,7 +50,14 @@ const Sidebar = () => {
         boxShadow: "0px 4px 23px 0px #0000000D",
       }}
     >
-      <div className="" style={{display: 'flex', alignContent: 'center', justifyContent: 'center'}}>
+      <div
+        className=""
+        style={{
+          display: "flex",
+          alignContent: "center",
+          justifyContent: "center",
+        }}
+      >
         <AppLogo />
       </div>
       <Menu
@@ -92,13 +99,16 @@ const Sidebar = () => {
           />
         </Menu.Item>
       </Menu>
-      <section className="footer" style={{
-        alignItems:'center',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 48
-        }}>
-          <SettingsIcon />
+      <section
+        className="footer"
+        style={{
+          alignItems: "center",
+          display: "flex",
+          flexDirection: "column",
+          gap: 48,
+        }}
+      >
+        <SettingsIcon />
         <span className="Avatar">MK</span>
       </section>
     </Sider>

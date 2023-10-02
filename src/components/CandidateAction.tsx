@@ -47,11 +47,12 @@ const menuProps = {
 
 const CandidateAction: React.FC = () => (
   <Space wrap>
-    <Dropdown.Button 
-    size={"large"} type="primary" 
-    menu={menuProps} 
-    onClick={handleButtonClick}
-    icon={<ExpandIcon />}
+    <Dropdown.Button
+      size={"large"}
+      type="primary"
+      menu={menuProps}
+      onClick={handleButtonClick}
+      icon={<ExpandIcon />}
     >
       Move To Video Interview I
     </Dropdown.Button>

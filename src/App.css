@@ -1,39 +1,39 @@
- /* Sidebar */
- .Sidebar > .footer {
-    height: 123px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Sidebar */
+.Sidebar > .footer {
+  height: 123px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- .Sidebar {
-    top: 0;
-    bottom: 0;
-    padding: 32px 0;
-    position: fixed;
-    box-shadow: 0px 4px 23px 0px #0000000D
-  }
-  .Sidebar > .header,
-  .Sidebar > .footer {
-    height: 123px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .Sidebar > .footer {
-    justify-self: flex-end;
-  }
- 
-  .Avatar {
-    background-color: #D7E5FD;
-    color: #B1CDFD;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 26px;
-    width: 24px;
-    height: 24px;
-    font-size: 10px;
-    font-weight: 600;
-  }
-  /* Sidebar */
+.Sidebar {
+  top: 0;
+  bottom: 0;
+  padding: 32px 0;
+  position: fixed;
+  box-shadow: 0px 4px 23px 0px #0000000d;
+}
+.Sidebar > .header,
+.Sidebar > .footer {
+  height: 123px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Sidebar > .footer {
+  justify-self: flex-end;
+}
+
+.Avatar {
+  background-color: #d7e5fd;
+  color: #b1cdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 26px;
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+  font-weight: 600;
+}
+/* Sidebar */

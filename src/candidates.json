@@ -1,15 +1,17 @@
-[{
+[
+  {
     "firstName": "John",
     "lastName": "Doe",
-  "currentResidence": "Riyadh, Saudi Arabia",
-  "education": {
-    "highestLevel": "Bachelor",
-  "school": "Cambridge University",
-  "startDate": "2023",
-  "endDate": "2023"
-  },
-  "tags": {
-    "system": ["top_candidate"],
-    "user": ["New York", "Marketing", "London"]
+    "currentResidence": "Riyadh, Saudi Arabia",
+    "education": {
+      "highestLevel": "Bachelor",
+      "school": "Cambridge University",
+      "startDate": "2023",
+      "endDate": "2023"
+    },
+    "tags": {
+      "system": ["top_candidate"],
+      "user": ["New York", "Marketing", "London"]
+    }
   }
-}]
+]

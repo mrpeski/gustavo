@@ -13,7 +13,7 @@ function App() {
       <Row>
         <Col flex="385px" style={{ marginRight: 32 }}>
           <Affix offsetTop={32} onChange={(affixed) => console.log(affixed)}>
-            <Search /> 
+            <Search />
             <Filters />
           </Affix>
         </Col>

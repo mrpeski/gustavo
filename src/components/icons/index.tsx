@@ -37,5 +37,5 @@ export {
   MailIcon,
   SettingsIcon,
   PlayIcon,
-  ExpandIcon
+  ExpandIcon,
 };

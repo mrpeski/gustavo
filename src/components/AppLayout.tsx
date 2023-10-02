@@ -1,13 +1,13 @@
 import React, { FC, PropsWithChildren, useState } from "react";
-import {
-  Layout,
-  theme,
-} from "antd";
+import { Layout, theme } from "antd";
 import Sidebar from "./Sidebar";
 
 const { Header, Content } = Layout;
 
-const AppLayout: FC<PropsWithChildren<{header: FC}>> = ({ children, header }) => {
+const AppLayout: FC<PropsWithChildren<{ header: FC }>> = ({
+  children,
+  header,
+}) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();

@@ -7,8 +7,8 @@ export const themeConfig: ThemeConfig = {
     colorBgContainer: "#F9FAFF",
     borderRadius: 8,
     lineWidth: 0.5,
-    colorBorder: '#ECECEC',
-    colorText: '#0B0B0B'
+    colorBorder: "#ECECEC",
+    colorText: "#0B0B0B",
   },
   components: {
     Menu: {
@@ -16,7 +16,7 @@ export const themeConfig: ThemeConfig = {
       iconSize: 24,
       itemHoverBg: "#E9EFFF",
       itemBorderRadius: 8,
-      itemHeight: 48
+      itemHeight: 48,
     },
     Layout: {
       bodyBg: "#F9FAFF",
@@ -36,23 +36,22 @@ export const themeConfig: ThemeConfig = {
       // paddingContentVertical: 8,
     },
     Checkbox: {
-      colorBorder: '#8492A7',
+      colorBorder: "#8492A7",
       lineWidth: 1.5,
-      size:  16
+      size: 16,
     },
     Input: {
       lineWidth: 1,
-      colorBorder: '#F3F3F3',
-            borderRadius: 8,
-            colorBgContainer: '#FFF'
-
+      colorBorder: "#F3F3F3",
+      borderRadius: 8,
+      colorBgContainer: "#FFF",
     },
     Collapse: {
-      headerBg: '#FFF',
+      headerBg: "#FFF",
       lineWidth: 1,
       headerPadding: "18px 16px",
-         
-      colorBorder: 'transparent',
-    }
+
+      colorBorder: "transparent",
+    },
   },
 };
