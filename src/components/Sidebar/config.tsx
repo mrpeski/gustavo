@@ -7,6 +7,7 @@ import {
   HeartIcon,
   Calendar,
   UserGroupIcon,
+  ChevronRight,
 } from "../icons";
 
 const withAntClass = (Component: any, props?: any) => {
@@ -57,5 +58,10 @@ export const navConfg = [
     key: v4(),
     icon: withAntClass(HeartIcon),
     label: "nav 3",
+  },
+  {
+    key: v4(),
+    icon: withAntClass(ChevronRight),
+    label: "Go Back",
   },
 ];

@@ -26,6 +26,7 @@ const Sidebar = () => {
       trigger={null}
       collapsible
       collapsed={collapsed}
+
       style={{
         background: colorBgContainer,
         top: 0,
@@ -33,57 +34,53 @@ const Sidebar = () => {
         padding: "32px 0",
         position: "fixed",
         boxShadow: "0px 4px 23px 0px #0000000D",
+        
       }}
     >
-      <div
-        className=""
-        style={{
-          display: "flex",
-          alignContent: "center",
-          justifyContent: "center",
-        }}
-      >
-        <AppLogo />
-      </div>
-      <Menu
-        theme="light"
-        mode="inline"
-        defaultSelectedKeys={["1"]}
-        style={{
-          width: "auto",
-          gap: 12,
-          // flex: "auto",
-          border: "none",
-          padding: 12,
-          alignItems: "center",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <style>
-          {`
-          .ant-menu-title-content {
-            display: none !important;
-          }
-          `}
-        </style>
-
-        {navConfg.map((config) => (
-          <Menu.Item
-            icon={config.icon}
-            style={collapsed ? { ...collapsedStyle } : undefined}
-          >
-            {!collapsed ? <span>{config.label}</span> : null}
-          </Menu.Item>
-        ))}
-        <Menu.Item>
-          <Button
-            style={{ background: "transparent", border: "none" }}
-            icon={<ChevronRight />}
-            onClick={() => setCollapsed(!collapsed)}
-          />
-        </Menu.Item>
-      </Menu>
+      <nav>
+        <div
+          className=""
+          style={{
+            display: "flex",
+            alignContent: "center",
+            justifyContent: "center",
+          }}
+        >
+          <AppLogo />
+        </div>
+        <Menu
+          theme="light"
+          mode="inline"
+          defaultSelectedKeys={["1"]}
+          style={{
+            width: "auto",
+            gap: 2,
+            // flex: "auto",
+            border: "none",
+            padding: 12,
+            alignItems: "center",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <style>
+            {`
+            .ant-menu-title-content {
+              display: none !important;
+            }
+            `}
+          </style>
+          {navConfg.map((config) => (
+            <Menu.Item
+              icon={config.icon}
+              style={collapsed ? { ...collapsedStyle } : undefined}
+            >
+              {!collapsed ? <span>{config.label}</span> : null}
+            </Menu.Item>
+          ))}
+        </Menu>
+        
+      </nav>
       <section
         className="footer"
         style={{
@@ -91,6 +88,10 @@ const Sidebar = () => {
           display: "flex",
           flexDirection: "column",
           gap: 24,
+          position: 'absolute',
+          left: 0,
+          bottom: 20,
+          right: 0
         }}
       >
         <SettingsIcon />
