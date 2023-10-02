@@ -1,21 +1,9 @@
 import React, { FC, PropsWithChildren, useState } from "react";
 import {
-  Button,
-  Col,
-  Divider,
   Layout,
-  Row,
-  Space,
   theme,
-  Typography,
 } from "antd";
 import Sidebar from "./Sidebar";
-import OpportunityBrowsing from "./OpportunityBrowsing";
-import { SearchOutlined } from "@ant-design/icons";
-import CandidateAction from "./CandidateAction";
-import { MailIcon, TagIcon, UserCheckIcon, UserCloseIcon, UserVoiceIcon } from "./icons";
-
-const { Title, Paragraph } = Typography;
 
 const { Header, Content } = Layout;
 
