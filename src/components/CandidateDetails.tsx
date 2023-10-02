@@ -7,7 +7,7 @@ const styles: any = {
     height: 56,
     borderRadius: 30,
     fontSize: 20,
-    alignItems: "center"
+    alignItems: "center",
   },
   wrapper: {
     backgroundColor: "white",
