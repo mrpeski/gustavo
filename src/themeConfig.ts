@@ -27,8 +27,10 @@ export const themeConfig: ThemeConfig = {
       titleMarginTop: 1,
     },
     List: {
+      headerBg: "#FFF",
       colorBgContainer: "#FFF",
       itemPaddingLG: "0",
+      colorBorder: "#EEE",
     },
     Button: {
       defaultBg: "#FFF",

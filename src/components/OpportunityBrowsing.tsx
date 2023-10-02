@@ -21,6 +21,7 @@ const ListRenderer: FC<{ label: string; count: number }> = ({
       {label}
       <Badge
         count={count}
+        overflowCount={5000}
         color="#F8F8F8"
         style={{ color: "#444", fontWeight: 500 }}
       />
