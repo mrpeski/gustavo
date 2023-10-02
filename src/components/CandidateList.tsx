@@ -6,6 +6,11 @@ import CandidateListHeader from "./CandidateListHeader";
 
 const CandidateList: React.FC = () => (
   <List
+    style={{
+      background: "white",
+      borderRadius: 16, 
+      overflow: "hidden", 
+      padding: "8px 0"}}
     header={<CandidateListHeader />}
     bordered
     itemLayout="horizontal"

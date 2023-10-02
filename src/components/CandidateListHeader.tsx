@@ -8,6 +8,7 @@ const CandidateListHeader = () => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
+        padding: "6px 0"
       }}
     >
       <Row>

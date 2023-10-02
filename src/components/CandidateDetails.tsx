@@ -7,6 +7,7 @@ const styles: any = {
     height: 56,
     borderRadius: 30,
     fontSize: 20,
+    alignItems: "center"
   },
   wrapper: {
     backgroundColor: "white",
@@ -65,7 +66,7 @@ const Description: FC<{ item: any }> = ({ item }) => {
         <a
           href="https://ant.design"
           style={styles.title}
-        >{`${firstName} ${lastName}`}</a>
+        >{`${firstName}${lastName}`}</a>
         <p style={styles.residence}>{currentResidence}</p>
         <p style={styles.school}>
           {education.highestLevel} - {education.school} ({education.startDate} -{" "}
