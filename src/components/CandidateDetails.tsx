@@ -59,14 +59,14 @@ const Description: FC<{ item: any }> = ({ item }) => {
   return (
     <Row align={"middle"} style={styles.wrapper}>
       <span className="Avatar" style={styles.avatar}>
-        {`${firstName[0]} ${lastName[0]}`}
+        {`${firstName[0]}${lastName[0]}`}
       </span>
 
       <article style={styles.details}>
         <a
           href="https://ant.design"
           style={styles.title}
-        >{`${firstName}${lastName}`}</a>
+        >{`${firstName} ${lastName}`}</a>
         <p style={styles.residence}>{currentResidence}</p>
         <p style={styles.school}>
           {education.highestLevel} - {education.school} ({education.startDate} -{" "}
