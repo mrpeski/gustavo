@@ -19,6 +19,7 @@ const styles: any = {
     color: "#000",
     fontSize: 14,
     fontWeight: 600,
+    fontFamily: "Poppins",
   },
   details: {
     display: "flex",

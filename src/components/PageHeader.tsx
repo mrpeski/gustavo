@@ -18,7 +18,10 @@ const PageHeader = () => {
   return (
     <Row gutter={{ xs: 8, sm: 16, md: 24 }}>
       <Col flex="385px" style={{ marginRight: 32 }}>
-        <Title level={4} style={{ margin: 0, color: colorPrimary }}>
+        <Title
+          level={4}
+          style={{ margin: 0, color: colorPrimary, fontFamily: "Poppins" }}
+        >
           London Internship Program
         </Title>
         <Paragraph>London</Paragraph>
