@@ -9,6 +9,8 @@ export const themeConfig: ThemeConfig = {
     lineWidth: 0.5,
     colorBorder: "#ECECEC",
     colorText: "#0B0B0B",
+    boxShadow: "0px 4px 25px 0px rgba(29, 78, 216, 0.05)",
+    boxShadowSecondary: "0px 4px 25px 0px rgba(29, 78, 216, 0.05)"
   },
   components: {
     Menu: {
