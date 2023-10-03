@@ -94,7 +94,7 @@ const Sidebar = () => {
           right: 0
         }}
       >
-        <SettingsIcon fill="#444"/>
+        <SettingsIcon fill="#444" width={24} height={24}/>
         <span className="Avatar">MK</span>
       </section>
     </Sider>

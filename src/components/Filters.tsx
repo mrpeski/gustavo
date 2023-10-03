@@ -78,7 +78,7 @@ const Filters: React.FC = () => {
         onChange={onChange}
         expandIconPosition={"end"}
         expandIcon={({ isActive }) => (
-          <ExpandIcon fill={token.colorPrimary} rotate={isActive ? 90 : 0} />
+          <ExpandIcon fill={token.colorPrimary} rotate={isActive ? 90 : 0} width={16} />
         )}
         items={items}
       />
